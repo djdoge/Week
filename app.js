@@ -15,5 +15,5 @@ function getWeekNumber(d) {
     return [d.getFullYear(), weekNo];
 }
 var thisWeek = getWeekNumber(new Date());
-$('h1').textContent = thisWeek
+$('h1').textContent = thisWeek;
 console.log(thisWeek);
