@@ -1,6 +1,6 @@
 .week {
     margin: 0;
-    background: 8B4F00;
+    background: #8B4F00;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -9,7 +9,7 @@
 }
 
 body {
-background: 8B4F00;
+background: #8B4F00;
 height: 100%;
 width: 100%;
 }
