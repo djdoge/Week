@@ -1,4 +1,7 @@
-
+function update {
+var thisWeek = getWeekNumber(new Date())[1];
+$('.week').html(thisWeek);
+}
 
 function getWeekNumber(d) {
     // Copy date so don't modify original
@@ -17,3 +20,9 @@ function getWeekNumber(d) {
 var thisWeek = getWeekNumber(new Date())[1];
 $('.week').html(thisWeek);
 console.log(thisWeek);
+
+while(true) {
+        setTimeout(function() {
+setWeekText();        
+}, 1200000);
+}
