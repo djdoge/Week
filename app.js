@@ -23,6 +23,6 @@ console.log(thisWeek);
 
 while(true) {
         setTimeout(function() {
-setWeekText();        
+update();        
 }, 1200000);
 }
