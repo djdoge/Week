@@ -1,5 +1,4 @@
-{
-function update {
+function update()
 var thisWeek = getWeekNumber(new Date())[1];
 $('.week').html(thisWeek);
 }
