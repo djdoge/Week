@@ -3,8 +3,9 @@ var thisWeek;
 function update() {
     var newWeek = getWeekNumber(new Date())[1];
     
-    if(newWeek!=thisWeek){thisWeek=newWeek}
-        then
+    if(newWeek!=thisWeek) {
+        thisWeek=newWeek ;
+    }
     
         $('.week').html(thisWeek);
     console.log("HOLY MOTHER OF GOD!!!!") 
