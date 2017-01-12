@@ -1,7 +1,9 @@
+function randomColours() {
+    
 const weekColours = ["#193996", "#51173A", "#F8970C", "#8B1C62"];
-
+var thisWeek;
 function update() {
-    var thisWeek = getWeekNumber(new Date())[1];
+    var newWeek = getWeekNumber(new Date())[1];
     $('.week').html(thisWeek);
     console.log("HOLY MOTHER OF GOD!!!!") 
 }
