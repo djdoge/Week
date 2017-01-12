@@ -14,6 +14,7 @@ function update() {
 }
 
 function randomColours() {
+    $("body").css("background", weekColours[Math.floor(Math.random()*weekColours.length)]);
 }
 
 function getWeekNumber(d) {
@@ -32,5 +33,5 @@ function getWeekNumber(d) {
 }
 
 update();
-$("body").css("background", weekColours[Math.floor(Math.random()*weekColours.length)]);
+
 setInterval(update, 10000);
