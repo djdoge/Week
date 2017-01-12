@@ -1,3 +1,5 @@
+const weekColours = {"red"};
+
 function update() {
     var thisWeek = getWeekNumber(new Date())[1];
     $('.week').html(thisWeek);
@@ -20,5 +22,5 @@ function getWeekNumber(d) {
 }
 
 update();
-$("body").css("background", "red");
+$("body").css("background", weekColours[0]);
 setInterval(update, 10000);
