@@ -7,7 +7,7 @@ function update() {
         thisWeek=newWeek;
         $('.week').html(thisWeek);        
         console.log("HOLY MOTHER OF GOD!!!!") 
-        randomColours;
+        randomColours();
     }
     
 
