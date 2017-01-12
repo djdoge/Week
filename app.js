@@ -9,8 +9,6 @@ function update() {
         console.log("HOLY MOTHER OF GOD!!!!") 
         randomColours();
     }
-    
-
 }
 
 function randomColours() {
