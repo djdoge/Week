@@ -19,4 +19,6 @@ function getWeekNumber(d) {
     return [d.getFullYear(), weekNo];
 }
 
+update;
+
 setInterval(update, 10000);
