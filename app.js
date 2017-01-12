@@ -1,5 +1,3 @@
-function randomColours() {
-    
 const weekColours = ["#193996", "#51173A", "#F8970C", "#8B1C62"];
 var thisWeek;
 function update() {
@@ -8,6 +6,8 @@ function update() {
     console.log("HOLY MOTHER OF GOD!!!!") 
 }
 
+function randomColours() {
+}
 function getWeekNumber(d) {
     // Copy date so don't modify original
     d = new Date(+d);
