@@ -1,8 +1,12 @@
 function update() {
-var thisWeek = getWeekNumber(new Date())[1];
-$('.week').html(thisWeek);
-    setTimeout(update(), 10000);
+    var thisWeek = getWeekNumber(new Date())[1];
+    $('.week').html(thisWeek);
     console.log("JESUS CHRIST!!!!") 
+    UpdateTimout();
+}
+
+function UpdateTimeout() {
+        setTimeout(update(), 10000);
 }
 
 function getWeekNumber(d) {
