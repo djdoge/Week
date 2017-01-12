@@ -2,11 +2,6 @@ function update() {
     var thisWeek = getWeekNumber(new Date())[1];
     $('.week').html(thisWeek);
     console.log("HOLY MOTHER OF GOD!!!!") 
-    updateTimeout();
-}
-
-function updateTimeout() {
-    setTimeout(update(), 10000);
 }
 
 function getWeekNumber(d) {
@@ -24,4 +19,4 @@ function getWeekNumber(d) {
     return [d.getFullYear(), weekNo];
 }
 
-update();
+setInterval(update, 10000);
