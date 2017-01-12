@@ -2,7 +2,7 @@ function update() {
 var thisWeek = getWeekNumber(new Date())[1];
 $('.week').html(thisWeek);
     setTimeout(update(), 10000);
-    console.log("G dog") 
+    console.log("JESUS CHRIST!!!!") 
 }
 
 function getWeekNumber(d) {
@@ -19,17 +19,5 @@ function getWeekNumber(d) {
     // Return array of year and week number
     return [d.getFullYear(), weekNo];
 }
-var thisWeek = getWeekNumber(new Date())[1];
-$('.week').html(thisWeek);
-console.log(thisWeek);
 
-//while(true) {
-;
-
-function executeAsync(func) {
-    setTimeout(func, 0);
-}
-
-executeAsync(function() {
-    alert("Test");
-});
+update();
