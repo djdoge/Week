@@ -1,10 +1,11 @@
 const weekColours = ["#193996", "#51173A", "#F8970C", "#8B1C62"];
 var thisWeek;
-
-if(newWeek === thisWeek)
 function update() {
     var newWeek = getWeekNumber(new Date())[1];
-    $('.week').html(thisWeek);
+    
+    if(newWeek === thisWeek)
+    
+        $('.week').html(thisWeek);
     console.log("HOLY MOTHER OF GOD!!!!") 
 }
 
