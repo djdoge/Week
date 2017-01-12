@@ -21,9 +21,6 @@ var thisWeek = getWeekNumber(new Date())[1];
 $('.week').html(thisWeek);
 console.log(thisWeek);
 
-while(true) {
-console.log("Hello gordon") ;
-    setTimeout(function() {
-update();        
-}, 1200000);
-}
+//while(true) {
+    console.log("Hello gordon") ;
+    setTimeout(update(), 1200000);
