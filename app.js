@@ -1,4 +1,4 @@
-const weekColours = ["#193996"];
+const weekColours = ["#193996", "#51173A", "#F8970C", "#8B1C62"];
 
 function update() {
     var thisWeek = getWeekNumber(new Date())[1];
@@ -22,5 +22,5 @@ function getWeekNumber(d) {
 }
 
 update();
-$("body").css("background", weekColours[0]);
+$("body").css("background", weekColours[Math.floor(Math.random()*weekColours.lenth)]);
 setInterval(update, 10000);
