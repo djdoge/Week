@@ -22,5 +22,5 @@ function getWeekNumber(d) {
 }
 
 update();
-$("body").css("background", weekColours[Math.floor(Math.random()*weekColours.lenth)]);
+$("body").css("background", weekColours[Math.floor(Math.random()*weekColours.length)]);
 setInterval(update, 10000);
