@@ -20,5 +20,5 @@ function getWeekNumber(d) {
 }
 
 update();
-
+$("body").css("background", "red");
 setInterval(update, 10000);
