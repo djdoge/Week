@@ -22,7 +22,8 @@ $('.week').html(thisWeek);
 console.log(thisWeek);
 
 while(true) {
-        setTimeout(function() {
+console.log("Hello gordon") ;
+    setTimeout(function() {
 update();        
 }, 1200000);
 }
