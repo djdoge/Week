@@ -13,7 +13,7 @@ function update() {
 }
 
 function autoColours() {
-    $("body").css("background", weekColours[Math.floor(Math.random()*weekColours.length)]);
+    $("body").css("background", weekColours[thisWeek-1]);
 }
 
 function getWeekNumber(d) {
