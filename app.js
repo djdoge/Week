@@ -7,12 +7,12 @@ function update() {
         thisWeek=newWeek;
         $('.week').html(thisWeek);        
         console.log("HOLY MOTHER OF GOD!!!!") 
-        randomColours();
+        autoColours();
     }
     
 }
 
-function randomColours() {
+function autoColours() {
     $("body").css("background", weekColours[Math.floor(Math.random()*weekColours.length)]);
 }
 
