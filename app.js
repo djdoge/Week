@@ -1,5 +1,7 @@
 const weekColours = ["#193996", "#51173A", "#F8970C", "#8B1C62"];
 var thisWeek;
+
+if(newWeek === thisWeek)
 function update() {
     var newWeek = getWeekNumber(new Date())[1];
     $('.week').html(thisWeek);
@@ -8,6 +10,7 @@ function update() {
 
 function randomColours() {
 }
+
 function getWeekNumber(d) {
     // Copy date so don't modify original
     d = new Date(+d);
