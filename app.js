@@ -2,7 +2,7 @@ function update() {
 var thisWeek = getWeekNumber(new Date())[1];
 $('.week').html(thisWeek);
     setTimeout(update(), 10000);
-    console.log("Gordon") 
+    console.log("G dog") 
 }
 
 function getWeekNumber(d) {
