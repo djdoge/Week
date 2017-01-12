@@ -1,4 +1,4 @@
-const weekColours = {"blue"};
+const weekColours = ["blue"];
 
 function update() {
     var thisWeek = getWeekNumber(new Date())[1];
