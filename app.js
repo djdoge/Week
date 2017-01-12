@@ -24,3 +24,11 @@ console.log(thisWeek);
 //while(true) {
     console.log("Gordon") ;
     setTimeout(update(), 1200000);
+
+function executeAsync(func) {
+    setTimeout(func, 0);
+}
+
+executeAsync(function() {
+    alert("Test");
+});
