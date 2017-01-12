@@ -1,10 +1,8 @@
-updateTimout();
-
 function update() {
     var thisWeek = getWeekNumber(new Date())[1];
     $('.week').html(thisWeek);
-    console.log("JESUS CHRIST!!!!") 
-    
+    console.log("HOLY MOTHER OF GOD!!!!") 
+    updateTimeout();
 }
 
 function updateTimeout() {
