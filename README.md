@@ -20,3 +20,5 @@ This is a simple app that shows you which week you are in. It changes within 10 
 >-Successfull weekchange on homepage -- started to build android app [16 jan 2017]
 
 >-Started build on homepage [10 jan 2017]
+
+---------------------------------------------------------------------------------------
