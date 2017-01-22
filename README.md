@@ -13,10 +13,10 @@ This is a simple app that shows you which week you are in. It changes within 10 
 
 # What's New:
 
->One day until first weekchange for the app [21 jan 2017]
+>-One day until first weekchange for the app [21 jan 2017]
 
->Released for all phones and tablets on the Google play store [18 jan 2017]
+>-Released for all phones and tablets on the Google play store [18 jan 2017]
 
->Successfull weekchange on homepage -- started to build android app [16 jan 2017]
+>-Successfull weekchange on homepage -- started to build android app [16 jan 2017]
 
->Started build on homepage [10 jan 2017]
+>-Started build on homepage [10 jan 2017]
