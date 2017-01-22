@@ -11,7 +11,7 @@ Get the app on Google Play now:
 # Description:
 This is a simple app that shows you which week you are in. It changes within 10 secounds of the new week. No ads and no buttons to click just launch the app and see which week it is. Every week there will be a new and unique colour.
 
-# What's New?:
+# What's New:
 
 One day until first weekchange for the app [21 jan 2017]
 
