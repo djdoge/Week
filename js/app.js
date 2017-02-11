@@ -12,13 +12,17 @@ const weekColours = ["#193996", "#51173A", "#F8970C", "#8B1C62", "#175032",
 var thisWeek;
 function update() {
     var newWeek = getWeekNumber(new Date())[1];
-    
+
     if(newWeek!=thisWeek) {
         thisWeek=newWeek;
-        $('.week').html(thisWeek);        
+        $('.week').html(thisWeek);
         autoColours();
+        if (thisWeek>47 || thisWeek<7) {
+            snow();
+            
+        }
     }
-    
+
 }
 
 function autoColours() {
