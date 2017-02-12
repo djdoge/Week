@@ -6,11 +6,10 @@
     top: 50%;
     left: 50%;
     margin-right: -50%;
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
 }
 
 body {
-background: #00456E;
 height: 100%;
 width: 100%;
 }
