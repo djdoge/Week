@@ -1,3 +1,11 @@
+var display = 'week';
+
+document.addEventListener('touchstart', handleTouchStart, false);
+document.addEventListener('touchmove', handleTouchMove, false);
+
+var xDown = null;
+var yDown = null;
+
 const weekColours = ["#193996", "#51173A", "#F8970C", "#8B1C62", "#175032",
                      "#d80a3a", "#820000", "#001063", "#af0000", "#000000",
                      "#87008c", "#115aad", "#a0ad11", "#00bfaf", "#e00000",
@@ -11,25 +19,26 @@ const weekColours = ["#193996", "#51173A", "#F8970C", "#8B1C62", "#175032",
                      "#9e940b", "#9e190b", "#ff00bf"];
 var thisWeek;
 function update() {
-    var newWeek = getWeekNumber(new Date())[1];
-
-    if(newWeek!=thisWeek) {
-        thisWeek=newWeek;
-
-        autoColours();
-        if (thisWeek>47 || thisWeek<3) {
-            snow();
-        }
-    }
-
+  if (display === 'week') {
+  var newWeek = getWeekNumber(new Date())[1];
+  }
 }
+  if(newWeek=thisWeek) {
+      thisWeek=newWeek;
+
+      autoColours();
+      if (thisWeek>47 || thisWeek<3) {
+          snow();
+  }
+}
+  if (display === 'day')
+  //do stuff to show daynumber
 
 function autoColours() {
     $("body").animate({backgroundColor: weekColours[thisWeek-1]}, 2000);
-
     $(".week").fadeOut(1000, ()=> {
-      $(".week").html(thisWeek);
-    }).fadeIn(1000);
+      $(".week").html(thisWeek);}
+    ).fadeIn(1000);
 }
 
 function getWeekNumber(d) {
@@ -49,4 +58,39 @@ function getWeekNumber(d) {
 
 update();
 
-setInterval(update, 10000);
+function handleTouchStart(evt) {
+    xDown = evt.touches[0].clientX;
+    yDown = evt.touches[0].clientY;
+}
+
+function handleTouchMove(evt) {
+    if ( ! xDown || ! yDown ) {
+        return;
+    }
+}
+    var xUp = evt.touches[0].clientX;
+    var yUp = evt.touches[0].clientY;
+
+    var xDiff = xDown - xUp;
+    var yDiff = yDown - yUp;
+
+    if ( Math.abs( xDiff ) > Math.abs( yDiff ) ) {
+      /*most significant*/
+        if ( xDiff > 0 ) {
+            /* left swipe */
+        } else {
+            /* right swipe */
+        }
+    }
+    else {
+        if ( yDiff > 0 ) {
+            /* up swipe */
+        } else {
+            /* down swipe */
+          }
+    }
+{
+    /* reset values */
+    xDown = null;
+    yDown = null;
+}
