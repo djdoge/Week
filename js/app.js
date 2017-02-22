@@ -1,3 +1,4 @@
+"use-strict";
 $('body').on('touchstart', (event) => handleTouchStart(event));
 $('body').on('touchmove', (event) => handleTouchMove(event));
 
@@ -24,7 +25,7 @@ function update() {
     if (display == 'week') {
         newWeek = getWeekNumber(new Date())[1];
     }
-    if(newWeek===thisWeek || !thisWeek) {
+    if(newWeek!=thisWeek || !thisWeek) {
         thisWeek=newWeek;
 
         autoColours();
@@ -40,7 +41,8 @@ function update() {
 function autoColours() {
     $("body").animate({backgroundColor: weekColours[thisWeek-1]}, 2000);
     $(".week").fadeOut(1000, ()=> {
-        $(".week").html(thisWeek);}
+        $(".week").html(thisWeek);
+      }
     ).fadeIn(1000);
 }
 
@@ -80,9 +82,16 @@ function handleTouchMove(event) {
         if ( xDiff > 0 ) {
             /* left swipe */
             console.log('left');
+            $(".week").html("Hello tester \n working on loads of new features!");
+            $(".week").css({"overflow": "hidden", "text-align": "center"});
+            $(".week").animate({"font-size": 30}, 500);
+
         } else {
             /* right swipe */
             console.log('right');
+            $(".week").html(thisWeek);
+            $(".week").animate({"font-size": 175}, 500);
+
         }
     }
     else {
