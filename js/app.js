@@ -82,7 +82,7 @@ function handleTouchMove(event) {
         if ( xDiff > 0 ) {
             /* left swipe */
             console.log('left');
-            $(".week").html("Hello tester! \n Working on loads of new features!");
+            $(".week").html("Hello tester! <br/> Working on loads of new features!");
             $(".week").css({"overflow": "hidden", "text-align": "center"});
             $(".week").animate({"font-size": 30}, 500);
 
