@@ -42,6 +42,7 @@ function autoColours() {
     $("body").animate({backgroundColor: weekColours[thisWeek-1]}, 2000);
     $(".week").fadeOut(1000, ()=> {
         $(".week").html(thisWeek);
+        $(".week").animate({"font-size": 175}, 500);
       }
     ).fadeIn(1000);
 }
@@ -111,3 +112,5 @@ function handleTouchMove(event) {
 }
 
 update();
+
+setInterval(update, 10000);
